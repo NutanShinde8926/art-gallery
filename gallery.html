@@ -20,8 +20,8 @@
 
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="artist.html">Artists</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -44,3 +44,154 @@
       </div>
     </div>
   </nav>
+
+  <header class="page-header">
+    <div class="container text-center">
+      <h1>Explore the Collection</h1>
+    </div>
+  </header>
+
+  <main class="content-section">
+    <div class="container">
+      <div class="gallery-toolbar d-flex flex-wrap gap-2 justify-content-center mb-4">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="abstract">Abstract</button>
+        <button class="filter-pill" data-filter="portrait">Portrait</button>
+        <button class="filter-pill" data-filter="landscape">Landscape</button>
+        <button class="filter-pill" data-filter="minimal">Minimal</button>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-box">
+            <span class="stat-number">120+</span>
+            <span class="stat-label">Featured works</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-box">
+            <span class="stat-number">35</span>
+            <span class="stat-label">Artists</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-box">
+            <span class="stat-number">8k</span>
+            <span class="stat-label">Visitors</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-box">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Online access</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="featured-spotlight mb-5">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-7">
+            <img src="https://images.unsplash.com/photo-1515405295579-ba7b45403062?auto=format&fit=crop&w=1200&q=80" alt="Featured artwork" class="spotlight-image">
+          </div>
+          <div class="col-lg-5">
+            <div class="spotlight-content">
+              <span class="spotlight-tag">Featured Piece</span>
+              <h2>Silent Motion</h2>
+              <p>A layered abstract composition expressing rhythm, stillness, and modern emotion through soft contrast and movement.</p>
+              <a href="artist.html" class="btn btn-warning">Meet the Artist</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4" id="galleryGrid">
+        <div class="col-md-6 col-lg-4 gallery-item" data-category="abstract">
+          <div class="gallery-card card h-100 border-0" data-artwork="Golden Horizon" data-image="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=80" data-description="A warm abstract composition with rich tones and layered textures." data-bs-toggle="modal" data-bs-target="#artModal">
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=80" alt="Abstract painting" />
+            <div class="card-body">
+              <h5 class="fw-bold">Golden Horizon</h5>
+              <p class="text-muted mb-0">Oil on canvas · 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 gallery-item" data-category="abstract">
+          <div class="gallery-card card h-100 border-0" data-artwork="Vivid Dreams" data-image="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=80" data-description="A vivid explosion of color and energy designed to push emotion forward." data-bs-toggle="modal" data-bs-target="#artModal">
+            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=80" alt="Colorful artwork" />
+            <div class="card-body">
+              <h5 class="fw-bold">Vivid Dreams</h5>
+              <p class="text-muted mb-0">Acrylic · 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 gallery-item" data-category="abstract">
+          <div class="gallery-card card h-100 border-0" data-artwork="Silent Motion" data-image="https://images.unsplash.com/photo-1515405295579-ba7b45403062?auto=format&fit=crop&w=900&q=80" data-description="A rhythm-driven composition balancing dark contrast with delicate movement." data-bs-toggle="modal" data-bs-target="#artModal">
+            <img src="https://images.unsplash.com/photo-1515405295579-ba7b45403062?auto=format&fit=crop&w=900&q=80" alt="Modern art" />
+            <div class="card-body">
+              <h5 class="fw-bold">Silent Motion</h5>
+              <p class="text-muted mb-0">Mixed media · 2023</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 gallery-item" data-category="landscape">
+          <div class="gallery-card card h-100 border-0" data-artwork="Coastal Glow" data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" data-description="A soft seascape capturing light, calm water, and the glow of evening." data-bs-toggle="modal" data-bs-target="#artModal">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Landscape artwork" />
+            <div class="card-body">
+              <h5 class="fw-bold">Coastal Glow</h5>
+              <p class="text-muted mb-0">Watercolor · 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 gallery-item" data-category="portrait">
+          <div class="gallery-card card h-100 border-0" data-artwork="Inner Light" data-image="https://images.unsplash.com/photo-1520637836862-4d197d17c90a?auto=format&fit=crop&w=900&q=80" data-description="A intimate portrait celebrating expression, warmth, and personal depth." data-bs-toggle="modal" data-bs-target="#artModal">
+            <img src="https://images.unsplash.com/photo-1520637836862-4d197d17c90a?auto=format&fit=crop&w=900&q=80" alt="Portrait painting" />
+            <div class="card-body">
+              <h5 class="fw-bold">Inner Light</h5>
+              <p class="text-muted mb-0">Portrait · 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 gallery-item" data-category="minimal">
+          <div class="gallery-card card h-100 border-0" data-artwork="Still Presence" data-image="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=900&q=80" data-description="A minimalist study in silence, balance, and thoughtful negative space." data-bs-toggle="modal" data-bs-target="#artModal">
+            <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=900&q=80" alt="Minimal art" />
+            <div class="card-body">
+              <h5 class="fw-bold">Still Presence</h5>
+              <p class="text-muted mb-0">Minimalism · 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="mb-0">© <span id="year"></span> Art Gallery App | Designed with Bootstrap</p>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="artModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content art-modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="artModalTitle">Artwork</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img id="artModalImage" src="" alt="Artwork preview" class="img-fluid w-100 modal-art-image">
+          <div class="p-4">
+            <p id="artModalDescription" class="mb-0"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
