@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Artists | Art Gallery</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><strong>Art Gallery</strong> <i class="fa-brands fa-artstation"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="artist.html">Artists</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="btn btn-warning dropdown-toggle ms-lg-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user me-1"></i> Account
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex mt-3 mt-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search artwork" aria-label="Search artwork">
+          <button class="btn btn-warning" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="py-5 bg-light">
+      <div class="container text-center">
+        <h1 class="fw-bold mb-3">Our Artists</h1>
+        <p class="lead text-muted mb-0">Creative minds shaping beautiful stories through art.</p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <button class="p-0 border-0 bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#artistModal1" style="cursor:pointer;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Van_Gogh_self-portrait_dedicated_to_Gauguin.jpg"
+                  class="card-img-top" alt="Vincent van Gogh" style="height: 320px; object-fit: cover;">
+              </button>
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Vincent van Gogh</h5>
+                <p class="text-warning mb-2">Post-Impressionist Painter</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <button class="p-0 border-0 bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#artistModal2" style="cursor:pointer;">
+                <img src="https://cdn.britannica.com/57/250457-050-342611AD/Claude-Monet-French-Impressionist-painter.jpg"
+                  class="card-img-top" alt="Claude Monet" style="height: 320px; object-fit: cover;">
+              </button>
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Claude Monet</h5>
+                <p class="text-warning mb-2">Impressionist Painter</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <button class="p-0 border-0 bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#artistModal3" style="cursor:pointer;">
+                <img src="https://www.singulart.com/blog/wp-content/uploads/2023/08/image-34.png"
+                  class="card-img-top" alt="Frida Kahlo" style="height: 320px; object-fit: cover;">
+              </button>
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Leonardo da Vinci</h5>
+                <p class="text-warning mb-2">monalisa Painter</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="artistModal1" tabindex="-1" aria-labelledby="artistModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artistModalLabel1">Vincent van Gogh - Starry Night</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://cdn.britannica.com/68/249168-050-9E988FBA/Starry-Night-over-the-Rhone-Van-Gogh.jpg"
+            class="img-fluid rounded mb-3" alt="Starry Night">
+          <p><strong>Famous Painting:</strong> Starry Night</p>
+          <p>A famous masterpiece filled with movement, glowing night sky colors, and emotional intensity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="artistModal2" tabindex="-1" aria-labelledby="artistModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artistModalLabel2">Claude Monet - Water Lilies</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://fs.artdevivre.com/storage/articles/events-article/a-monet/cc2ddc71a29480e80f2d4e86d19f1190.jpg"
+            class="img-fluid rounded mb-3" alt="Water Lilies">
+          <p><strong>Famous Painting:</strong> Water Lilies</p>
+          <p>A peaceful landscape study of reflections, color, and atmosphere created with the Impressionist style.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="artistModal3" tabindex="-1" aria-labelledby="artistModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artistModalLabel3">Frida Kahlo - The Two Fridas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.squarespace-cdn.com/content/v1/56c462e37da24f9466fa8ed8/1609940882434-1O3VLCLTM0F03WVK9482/mona-lisa.jpg"
+            class="img-fluid rounded mb-3" alt="The Two Fridas">
+          <p><strong>Famous Painting:</strong> The Two Fridas</p>
+          <p>A bold and expressive self-portrait exploring identity, pain, and emotional duality.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2026 Art Gallery | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
